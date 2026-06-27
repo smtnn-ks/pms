@@ -1,0 +1,6 @@
+.zed
+
+db/*
+!db/.keep
+
+__debug
