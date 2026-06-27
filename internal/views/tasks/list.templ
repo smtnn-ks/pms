@@ -1,0 +1,11 @@
+package tasks
+
+import "github.com/smtnn-ks/pms/internal/models"
+
+templ List(tasks []models.Task) {
+	<ul>
+		for _, task := range tasks {
+			<li id={ task.ID }>{ task.Title }</li>
+		}
+	</ul>
+}

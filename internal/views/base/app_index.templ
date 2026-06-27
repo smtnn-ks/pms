@@ -1,0 +1,21 @@
+package base
+
+type AppIndexData struct {
+	TitlePrefix string
+}
+
+templ AppIndex(data AppIndexData) {
+	<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="UTF-8"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			<title>{ data.TitlePrefix } - pms</title>
+			<meta name="description" content="Project Management System"/>
+		</head>
+		<body>
+			<h1>Hello</h1>
+			{ children... }
+		</body>
+	</html>
+}
